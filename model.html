@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js">
+    </script>
+
+</head>
+
+<body>
+    <a-scene background="color: #FAFAFA">
+        
+        <a-entity environment></a-entity>
+
+        <a-assets>
+            <a-asset-item id="creature" src="assets/models/images.glb"></a-asset-item>
+        
+           
+            <a-image src="#my-image" position="-0.13483 6.9264 2.73457" scale="5 5 5" material="" geometry=""></a-image>
+            <a-image src="#my-image" position="-0.00058 16.14832 -13.44012" scale="8 8 8" material="" geometry="" rotation="29.999999999999996 80 20"></a-image>
+            <a-image src="#my-image" position="-4.39913 8.98095 5.75918" material="" geometry="" scale="3 3 3"></a-image>
+            <a-entity gltf-model="assets/models/images.glb" position="1.07569 15.02939 -3.94634" scale="2 2 2" rotation="20 0 0"></a-entity>
+            <a-entity gltf-model="assets/models/images.glb" position="11.4069 8.85065 -8.99014" rotation="20 0 0" scale="2 2 2"></a-entity>
+            <a-entity gltf-model="assets/models/images.glb" position="-11.90736 6.99344 -5"></a-entity>
+            
+        </a-assets>
+        <img id="my-image" src="assets/img/001.png">
+        <img id="my-image1" src="assets/img/002.png">
+        <img id="my-image2" src="assets/img/003.png">
+        <img id="my-image3" src="assets/img/004.png">
+
+
+        <a-entity gltf-model="#creature" position="0 0 -5"></a-entity>
+        <a-entity gltf-model="#creature" position="0 10 -5"></a-entity>
+        <a-entity gltf-model="#creature" position="2 2.8 -5"></a-entity>
+        <a-image src="#my-image" position="0 0 0"></a-image>
+        <a-image src="#my-image" position="0 1.76079 0" scale="1 5 5" material="" geometry=""></a-image>
+
+
+       
+
+    </a-scene>
+</body>
+
+</html>
